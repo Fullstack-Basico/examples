@@ -11,7 +11,7 @@
     <br>
     <br>
     <br>
-    <input id="numeroA"> Número A </input>  
+    <input id="numeroA"  > Número A </input>  
     <br>
     <br>
     <br>
@@ -20,14 +20,43 @@
     <br>
     <br>
     <button id="suma" onclick="suma()" >SUMA (+)</button>
+    <button id="resta"  onclick="restar()" >RESTA (-)</button>
     <h1>Resultado: </h1><input id="resultadoSuma"></input>
 
     <script>
         console.log("Ejecutando codigo Javascript!!!")
 
-        //const valorA = document.getElementById("numeroA").value
-        //console.log("Valor A =>",valorA)
 
+
+        // esta función permite ejecutar la función de restar
+
+        function  restar (){
+            console.log("Iniciando resta");
+            
+            valorA = document.getElementById("numeroA").value;
+            valorB = document.getElementById("numeroB").value;
+            campoResultado = document.getElementById("resultadoSuma");
+            console.log("Campo resultado =>", typeof campoResultado.value,typeof "" )
+            
+
+            if(!valorA || !valorB){
+
+                campoResultado.value = "Faltan Datos";
+            } else {
+            
+                console.log("procesando resultado");        
+                console.log("Valor A =>", valorA);
+                console.log("Valor B =>", valorB);
+                campoResultado.value = Number(valorA) - Number(valorB);
+            }
+
+        }
+
+
+
+
+        // const valorA = document.getElementById("numeroA").value
+        // console.log("Valor A =>",valorA)
 
         function suma (){
             console.log("Iniciando suma");
@@ -39,6 +68,7 @@
             
             //null, "",undefined => if (false)
             //"" => false =>> !false =>true
+
             if(!valorA || !valorB){
 
                 campoResultado.value = "Faltan Datos";
@@ -48,7 +78,6 @@
                 console.log("Valor A =>", valorA);
                 console.log("Valor B =>", valorB);
                 campoResultado.value = Number(valorA) + Number(valorB);
-            
             }
 
             // if(valorA && valorB){
