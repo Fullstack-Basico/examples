@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+   
+   
+ 
+
+    const  fechaNacimiento = "14 marzo 1991";
+
+    console.log(fechaNacimiento)
+    //alert(fechaNacimiento)
+    console.log("hola mundo")
+
+    let fechaActual=Date(); //-Valor inicial
+    fechaActual="31 diciembre";// Valor nuevo
+    fechaActual="31 Marzo";
+    console.log(fechaActual)
+
+
+    let datos;
+    datos=1;
+    datos= "Esta soleado el dia";
+    datos=  true;
+    datos=  false;
+    datos= ["a", "b","c"]
+    datos= [1,1,3]
+    datos= [1,true,"Hola !!"]
+    datos= []
+    datos= {}
+    datos= {
+        id: 123,
+        fecha:"10 Marzo",
+        sol: false,
+        miArreglo:[ 1,2,3,4,5],
+        miobjetoHijo: {
+            idHijo:12,
+            luna:true,
+        }
+    }
+   
+
+    console.log("contenido variable datos = ", datos)
+    console.log("tipo de dato de la variable datos = ", typeof datos)
+
+
+
+
+    let diasSemana =[]
+    diasSemana=["lunes","Martes"]
+    diasSemana.push("Lunes")
+    diasSemana.push("Martes")
+    diasSemana.push("Miercoles")
+    diasSemana.push("Jueves")
+    diasSemana.push("Viernes")
+
+    diasSemana[0]=true
+    diasSemana[6]="familia"
+
+   
+    console.log("contenido variable dias Semana = ", diasSemana)
+    console.log("cuantos valores existen en la variable dias Semana = ", diasSemana.length)
+
+
+    datos= {
+        id: 123,
+        fecha:"10 Marzo",
+        sol: false,
+        miArreglo:[ 1,2,3,4,5],
+        miobjetoHijo: {
+            idHijo:12,
+            luna:true,
+        }
+    }
+   
+    let contenidoObjeto = datos.id
+    contenidoObjeto = datos.miArreglo
+    contenidoObjeto = datos.miobjetoHijo.luna
+
+    console.log("contenido variable contenidoObjeto = ", contenidoObjeto)
+
+
+    datos.id=555
+    datos.miArreglo=["a","b","c"]
+
+
+    console.log("contenido variable datos = ", datos)
+
+
+    console.log(Object.values(datos))
+
+
+    datos= [1,true,"Hola !!"]
+
+    datos.map((elemento)=>console.log(elemento))
+
+</script>
+
+</html>

@@ -13,3 +13,4 @@ git init -> iniciar un nuevo repositorio en un directtorio
 git add -> Agregar archivos nuevo para el seguimiento en git y agregar a archivos existentes
 git commit -> permite poner en firme o volver de forma oficial el nuevo o modificación dentro del repositorio
 git push -> Subir cambios a la nube
+git pull -> Descargar cambios
