@@ -74,6 +74,7 @@ a =5
    }else if(a<9) {
     console.log("Ingrese a la condición else if A")
    }
+   
 
 
 
@@ -84,5 +85,107 @@ a =5
    if(a<9) {
     console.log("Ingrese a la condición if")
    }
+
+
+  console.log("EJEMPLO FOR");
+  let datosPersonales=["Stiv Verdugo","1026252424","stiv.verdugo@gmail.com", "3165302341",31 ]
+
+  console.log("Contenido array datosPersonales =>",datosPersonales,typeof datosPersonales)
+
+
+
+  let DB = {} //Objecto
+
+
+  let nombresCampos = ["Nombre","Número Identificación", "Correo","Celular","Edad"]
+
+  console.log(datosPersonales.length)
+
+  for (index = 0; index < datosPersonales.length; index++) {
+
+    let nombreClave = nombresCampos[index];
+    
+    DB[nombreClave]=datosPersonales[index];
+    
+    
+  }
+
+  console.log("Contenido Objecto DB =>",DB)
+
+  let contenidoCarta = "Yo, "+DB["Nombre"]+", Identificado con número de cedula : "+DB["Número Identificación"];
+
+  console.log(contenidoCarta)
+
+
+
+console.log("SERIE FIBONACCI")
+
+var fibonacci = [];
+fibonacci[0] = 0;
+fibonacci[1] = 1;
+for (var i = 2; i < 10; i++) {
+fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+}
+console.log(fibonacci);
+
+var limit = 10;
+var acum = [0,1];
+
+for(i=2; i <= limit; i++){
+acum.push(acum[i-1] + acum[i-2]);
+document.write(acum[i]+"<br/>");
+}
+
+
+console.log("EJEMPLO SWITCH")
+
+let key = 1;
+
+key="17 Marzo"
+
+key =Date()
+switch (key) {
+  case 1: //key ==1 
+    console.log("Valor Variable =>",key);
+    key++;
+
+    break;
+
+  case "17 Marzo": //key =="17 Marzo" 
+    console.log("Valor Variable =>",key);
+    key++;
+    break;
+
+  default:
+    console.log("Valor Variable no estan configurado en el Switch =>",key);
+    break;
+}
+
+
+
+
+
+let operacion="suma";
+let resultado=null
+switch (operacion) {
+  case "suma":
+    resultado = 1+1;
+    break;
+  case "división":
+    resultado = 1/1;
+    break;
+  case "Multiplicación":
+    resultado = 1*1;
+    break;
+  case "Resta":
+    resultado = 1-1;
+    break;
+
+}
+
+console.log(resultado);
+
+
 </script>
 </html>
+
