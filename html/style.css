@@ -1,0 +1,12 @@
+.headerTable{
+    font-style: normal;
+    font-size: larger;
+    background-color: blue;
+}
+p {
+    color: aqua;
+}
+
+#mainContent{
+    color: darkgreen;
+}
