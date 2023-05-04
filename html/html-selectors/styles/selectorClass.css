@@ -1,0 +1,22 @@
+.box{
+    padding: 5px;
+    border-style: double;
+    background-color: darkgrey;
+    width: 25%;
+}
+
+.mainLetter{
+    font-size: x-small;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.generalLetter{
+    font-size:medium;
+    font-style:oblique;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.colorLetter{
+    color: deeppink;
+}

@@ -1,0 +1,29 @@
+body{
+    background-color:gainsboro;
+    border: 5px;
+}
+
+p{
+    color: brown;
+}
+
+div{
+background-color: gray  ;
+}
+
+#mainText{
+    color: blue;
+}
+
+.mainLetter{
+    color:darkmagenta;
+    font-family: cursive ;
+}
+
+.styleDiv{
+    background-color: whitesmoke;
+}
+
+#box{
+    background-color: blue;
+}
