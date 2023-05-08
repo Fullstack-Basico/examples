@@ -13,7 +13,7 @@
 
 
 #item1{
-    flex: 2;
+    flex: 5;
 }
 
 #item2{
@@ -23,6 +23,13 @@
 #item3{
     flex: 2;
 }
+
+
+
+
+
+
+
 #item4{
     flex: 2;
 }
@@ -48,24 +55,25 @@
     border-style: dashed;
     align-items:center;
     justify-content:space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .flexbox-second{
     border-style: solid;
     text-align: center;
     width: 500px;
-
 }
 
 .flexbox-third{
     padding: 5%;
-    
     text-align: justify;
     width: 200px;
     height: 100px;
-    flex-direction: column;
+  
     justify-content: space-around;
+    /*flex-wrap: wrap;
+    flex-direction: column;*/
+    flex-flow: column now;
 }
 
 
@@ -74,5 +82,5 @@
 }
 
 .style-div{
-
+    border-style: double;
 }
