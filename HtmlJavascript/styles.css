@@ -1,0 +1,10 @@
+.mainContainer{
+    display: flex;
+    background-color: antiquewhite;
+}
+.itemInformation{
+    flex: 1;
+    justify-content: center;
+    text-align: justify;
+    padding: 2%;
+}
