@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Basico</title>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+    <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre completo" required>
+        <br>
+        <br>
+        <label for="correo">Correo: </label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese correo electronico" required>
+        <br>
+        <br>
+        <label for="dolar">Valor en dolares:</label>
+        <input type="numeric" id="dolar" name="dolar" placeholder="Ingrese Valor en dolares">
+        <br>
+        <br>
+        <button id="formulario">Enviar (Boton Convencinal)</button>   
+        <input type="button" value="Enviar  (Boton No Convencinal)" id="BotonFormulario">
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 console.log("Loading Javascript");
 
 
-
 let myButton = document.getElementById("myButtonData");
 
 
