@@ -25,15 +25,13 @@ function sendForm(){
 
     alert("Precio Dolar : $ " + valueDolarInfo + " a  Precio  Peso Colombiano: $ "+ personalInfo.valuePeso)
     
-    window.location.href = "https://google.com";
+    //window.location.href = "https://google.com";
     
 }
 
 
 let buttonForm = document.getElementById("BotonFormulario");
-
 buttonForm.addEventListener('click',sendForm);
 
 let buttonForm2 = document.getElementById("formulario");
-
 buttonForm2.addEventListener('click',sendForm);
