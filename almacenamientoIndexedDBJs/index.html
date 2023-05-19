@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almacenamiento IndexedDB  Javascript</title>
 </head>
-<body>
+<body id="myBody" onload="loadBody()">
     <form id="myForm">
         <h1>Formulario Ingreso Usuario</h1>
         <label for="name">Nombre Usuario:</label>
@@ -19,6 +19,13 @@
         <br>
         <button id="sendButton">Enviar</button>
     </form>
+    <div>
+        <h2>Información Almacenada</h2>
+        <br>
+        <br>
+        <p id="Data"></p>
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
