@@ -22,18 +22,21 @@ nombre_institucion VARCHAR(100)
  * INSERTAR DATOS O REGISTROS EN TABLA
  * */
 
+
 insert into empleados (id, nombre, edad ,salario)
 values (1,'stiv', '31', 10000.12);
 
 
-
 insert into empleados (id, nombre, edad)
-values (2,'carlos', '31');
+values (10,'carlos', '66');
 
 
 insert into empleados (edad,id,nombre)
 values (40,3,'Gloria');
 
+
+insert into empleados (edad,id,nombre)
+values (25,8,'Eliana');
 
 
 insert into empleados (edad,id,nombre)
