@@ -41,6 +41,11 @@ values (1,'CENTRO SABER','http://centro.saber.co',1),
 
 
 
+insert into bibliotecas (id,nombre,sitio_web)
+values (4, 'ABC', 'http://abc.co');
+
+
+
 insert into libros  (id,nombre,autor,id_biblioteca)
 values (1,'CIEN AÑOS SOLEDAD','GABRIEL GARCIA MARQUEZ',2),
 (2,'YO ROBOT', 'ISSAC ASIMOV', 2 ),
