@@ -21,10 +21,28 @@ foreign key (id_escuela) references escuelas(id)
 create table libros(
 id integer primary key,
 nombre varchar(50),
-autor varchar(100),
 id_biblioteca int,
-foreign key (id_biblioteca) references bibliotecas(id)
+id_autor int,
+foreign key (id_biblioteca) references bibliotecas(id),
+foreign key (id_autor) references autores(id)
 );
+
+
+create table autores(
+id integer primary key,
+nombre varchar(50),
+anios varchar(100)
+);
+
+
+
+
+
+insert into autores  (id,nombre,anios)
+values (1,'GABRIEL GARCIA MARQUEZ',60),
+(2, 'ISSAC ASIMOV', 75 ),
+(3,  'WILLIAM GOLDING', 80);
+
 
 
 
@@ -46,10 +64,10 @@ values (4, 'ABC', 'http://abc.co');
 
 
 
-insert into libros  (id,nombre,autor,id_biblioteca)
-values (1,'CIEN AÑOS SOLEDAD','GABRIEL GARCIA MARQUEZ',2),
-(2,'YO ROBOT', 'ISSAC ASIMOV', 2 ),
-(3, 'OSCURIDAD VISIBLE', 'WILLIAM GOLDING', 3);
+insert into libros  (id,nombre,id_autor,id_biblioteca)
+values (1,'CIEN AÑOS SOLEDAD',1,2),
+(2,'YO ROBOT', 2, 2 ),
+(3, 'OSCURIDAD VISIBLE', 3, 3);
 
 
 select * 
