@@ -8,8 +8,6 @@ select id, nombre, id_biblioteca as identificador_biblioteca
 from libros
 
 
-
-
 select count(*) as conteo_regitros
 from libros
 
