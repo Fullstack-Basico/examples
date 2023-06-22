@@ -36,6 +36,44 @@ select avg(numero_estudiantes)  as promedio_numero_estudiantes
 from escuelas e 
 
 
+/** Maximo y Minimo**/
+
+select *
+from escuelas e 
+
+select min(numero_estudiantes) as minimo_estudiantes_escuela
+from escuelas e 
+
+select max(numero_estudiantes) as maximo_estudiantes_escuela
+from escuelas e 
+
+/**Ordenamiento datos**/
+
+select * 
+from escuelas e 
+order by numero_estudiantes asc 
+
+
+select * 
+from escuelas e 
+order by numero_estudiantes desc
+
+
+
+select * 
+from escuelas e 
+order by nombre  asc 
+
+
+select * 
+from escuelas e 
+order by nombre  desc
+
+
+
+
+
+
 /**Agrupaciones**/
 
 select salario , count(*) numero_empleados
